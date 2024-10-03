@@ -1,11 +1,12 @@
 import { CardsApp } from "../CardsApp/CardsApp";
 import './style.css'
+import logo from '../../images/GOURMETON.png'
 
 export function MobileApp() {
     return (
         <div className="mobile-app">
             <div className="top">
-                <img src="" alt="" id="logo-app" />
+                <img src={logo} alt="" id="logo-app" />
             </div>
             <CardsApp />
             <div className="navigation">
