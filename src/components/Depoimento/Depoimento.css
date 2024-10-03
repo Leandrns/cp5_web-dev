@@ -1,0 +1,12 @@
+.stars i{
+    color:yellow;
+    font-size: 30px;
+    padding: 5px;
+}
+.stars{
+    padding: 15px;
+}
+.comentario {
+    font-size: large;
+    color: #000000;
+}
