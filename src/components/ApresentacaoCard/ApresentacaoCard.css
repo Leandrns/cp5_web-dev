@@ -1,0 +1,11 @@
+.Apresentacao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url(../../images/tela_estrela.png);
+    min-height: 750px;
+}
+
+.twocard{
+    background-color: #E16D02;
+}

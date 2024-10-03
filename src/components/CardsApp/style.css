@@ -1,4 +1,4 @@
-.card {
+.card-app {
     display: flex;
     height: 55px;
     align-items: center;
@@ -10,12 +10,12 @@
     transition: all .3s ease;
 }
 
-.card:hover {
+.card-app:hover {
     background-color: #fd8d0e2a;
     box-shadow: inset 0 0 0 2px #E16D02;
 }
 
-.card img {
+.card-app img {
     height: 90%;
 }
 
@@ -44,5 +44,4 @@
 
 .title {
     font-weight: 600;
-
 }
