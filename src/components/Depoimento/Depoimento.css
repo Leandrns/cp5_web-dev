@@ -34,4 +34,7 @@
     .img{
         width: 350px;
     }
+    .depoimento{
+        background: url("../../images/tela_circulo_mobile.png");
+    }
 }
