@@ -1,0 +1,40 @@
+.stars i{
+    color:rgb(255, 208, 0);
+    font-size: 30px;
+    padding: 5px;
+}
+.img{
+    width: 400px;
+}
+.depoimento{
+    background: url("../../images/tela_circulo.png");
+    min-height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.stars{
+    padding: 15px;
+}
+.comentario {
+    font-size: 30px;
+    font-family: "Playfair Display";
+    color: #000000;
+}
+.texto{
+    width: 900px;
+}
+
+@media screen and (max-width: 923px) {
+    .texto{
+        width: 100%;
+    }
+    .img{
+        width: 350px;
+    }
+    .depoimento{
+        background: url("../../images/tela_circulo_mobile.png");
+    }
+}

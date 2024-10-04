@@ -2,6 +2,11 @@
     padding: 20px 60px 30px 60px;
     border-radius: 8px;
 }
+.lista-funcionalidades h3{
+    padding: 20px 60px 30px 60px;
+    border-radius: 8px;
+    color: white;
+}
 
 .lista-funcionalidades ul {
     display: flex;
@@ -11,6 +16,7 @@
     padding: 0;
     margin: 0;
     gap: 20px;
+    
 }
 
 .lista-funcionalidades li {
@@ -19,11 +25,22 @@
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    background: (135deg, rgba(255, 153, 0, 1), rgba(255, 0, 0, 1));
+    color: white;
+    border: solid 2px white;
+    padding: 5px 15px 10px 15px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+}
+
+.lista-funcionalidades li:hover {
+    background-color: salmon;
 }
 
 .funcionalidade-item span {
     margin-left: 20px; 
     font-size: 16px;
+    color: white;
 }
 
 @media (max-width: 768px) {

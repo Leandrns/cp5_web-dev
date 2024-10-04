@@ -5,7 +5,6 @@ import CardPratos from "../CardPratos/CardPratos";
 function Funcionalidades() {
     return (
       <div className="Funcionalidades">
-        <h2>Funcionalidades do APP</h2>
         <Diferenciais />
         <CardPratos />
       </div>

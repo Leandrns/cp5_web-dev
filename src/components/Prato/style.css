@@ -1,28 +1,28 @@
-.escolha_pratos h3 {
-    text-align: center;
-  }
-  
   .escolha_pratos {
-    margin: 20px 30px 30px 30px;
-
+    margin: 20px 30px  0 30px;
   }
   
   .botoes {
-    padding: 10px 20px;
-    margin: 10px 150px 30px 150px;
+    padding: 20px;
+    margin: 10px 60px 10px 60px;
     border: none;
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
   }
   
   .botao {
     color: white;
-    background-color: rgb(189, 128, 16);
-    border: 2px solid orange;
+    background-color: rgb(238, 176, 61);
+    border: 2px solid salmon;
     border-radius: 5px;
-    padding: 10px 20px;
+    padding: 10px ;
+  }
+
+  .botao:hover{
+    box-shadow: 0 0 10px orangered;
+    border: 2px solid salmon;
   }
   
   .row {
@@ -32,21 +32,29 @@
   }
   
   .card {
-    background-color: salmon;
+    background-color: #e9ecef;
+    border: 4px solid salmon;
     padding: 10px;
-    margin: 20px;
+   
     width: 100%;
-    max-width: 250px;
+    max-width: 300px;
     text-align: center;
+    transition: all ease 0.3s;
   }
   
-  .card button {
-    background-color: white;
-    border: 2px solid gray;
-    border-radius: 5px;
+  .card:hover{
+    border: 2px solid salmon;
+    box-shadow: 0 0 10px orangered;
   }
   
   .card-title {
+    color: orange;
+  }
+
+  .card button{
+    background-color: orange;
     color: white;
+    border: solid 2px orangered;
+    border-radius: 10px;
   }
   
