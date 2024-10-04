@@ -1,0 +1,39 @@
+.lista-funcionalidades {
+    padding: 20px 60px 30px 60px;
+    border-radius: 8px;
+}
+
+.lista-funcionalidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.lista-funcionalidades li {
+    font-size: 35px;
+    flex: 45%; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.funcionalidade-item span {
+    margin-left: 20px; 
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .lista-funcionalidades li {
+        flex: 100%; 
+        justify-content: center; 
+        text-align: center; 
+    }
+
+    .funcionalidade-item span {
+        margin-left: 0;
+    }
+}

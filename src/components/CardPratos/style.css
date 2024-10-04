@@ -1,0 +1,62 @@
+.escolha_pratos h3 {
+    text-align: center;
+}
+
+.escolha_pratos {
+    margin-bottom: 30px;
+}
+
+.botoes {
+    padding: 10px 20px;
+    margin: 10px auto 30px auto; 
+    border: none;
+    border-radius: 10px;
+    
+    cursor: pointer;
+    transition: background-color 0.3s; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px; 
+}
+
+.botao {
+    color: white;
+    background-color: salmon;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px; 
+    padding: 10px;
+    text-align: center;
+    transition: all ease 0.5s;
+}
+
+.botao:hover{
+    background-color: orange;
+    border: solid 2px rgb(151, 104, 17);
+}
+
+@media (max-width: 768px) {
+    .botao {
+        min-width: 70vw;
+    }
+}
+
+.card {
+    background-color: salmon;
+    padding: 0px;
+    margin: 20px 30px ;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    --bs-gutter-x: 0.0rem;
+}

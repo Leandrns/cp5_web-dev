@@ -1,0 +1,52 @@
+.escolha_pratos h3 {
+    text-align: center;
+  }
+  
+  .escolha_pratos {
+    margin: 20px 30px 30px 30px;
+
+  }
+  
+  .botoes {
+    padding: 10px 20px;
+    margin: 10px 150px 30px 150px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .botao {
+    color: white;
+    background-color: rgb(189, 128, 16);
+    border: 2px solid orange;
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: salmon;
+    padding: 10px;
+    margin: 20px;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+  }
+  
+  .card button {
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 5px;
+  }
+  
+  .card-title {
+    color: white;
+  }
+  
