@@ -14,8 +14,8 @@ function Diferenciais() {
             <ul>
                 {funcionalidades.map((item, index) => (
                     <li key={index} className="funcionalidade-item">
-                        <FontAwesomeIcon icon={item.icon} /> {/* Ícone */}
-                        <span>{item.text}</span> {/* Texto correspondente */}
+                        <FontAwesomeIcon icon={item.icon} />
+                        <span>{item.text}</span> 
                     </li>
                 ))}
             </ul>
