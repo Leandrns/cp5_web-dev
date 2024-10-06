@@ -15,7 +15,7 @@ export function CardsApp() {
     return (
         <div className="cards-app">
             {comidas.map(comida => (
-                <div className='card'>
+                <div className='card-comida'>
                     <img src={comida.strCategoryThumb} alt={comida.strCategory} />
                     <p className="title">{comida.strCategory}</p>
                 </div>

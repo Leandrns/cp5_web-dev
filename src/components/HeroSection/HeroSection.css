@@ -25,4 +25,17 @@
 .texts button:hover {
     background-color: #fff4e1de;
     color: #e16e02;
+    scale: 1.05;
+}
+
+@media screen and (max-width: 680px) {
+    .hero-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .texts {
+        text-align: center;
+        width: 80%;
+    }
 }
