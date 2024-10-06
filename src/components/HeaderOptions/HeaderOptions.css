@@ -1,0 +1,15 @@
+.header-options {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.header-options li {
+    transition: all .3s ease;
+    border-bottom: 3px solid transparent;
+    padding: 5px;
+}
+
+.header-options li:hover {
+    border-bottom: 3px solid #fff4e1;
+}

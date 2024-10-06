@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    background-color: #e16e02;
+    color: #fff4e1;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 8px black;
+}
+
+#logo {
+    height: 100%;
+}
