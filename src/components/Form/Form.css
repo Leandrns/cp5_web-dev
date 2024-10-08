@@ -1,0 +1,77 @@
+
+.tela-contato {
+    display: flex;
+    border: solid 3px #fff4e1;
+    border-radius: 15px;
+    justify-content: space-around;
+    
+}
+.titulo{
+    display: flex;
+    margin: 20px;
+}
+.formulario {
+    padding: 40px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 450px;
+}
+
+.formulario label, .formulario button {
+    font-weight: 600;
+}
+
+.capa img {
+    width: 80%;
+    height: 80%;
+    border-radius: 0 12px 12px 0;
+    align-content: center;
+}
+
+.formulario button {
+    background-color: #fff4e1;
+    border: solid 2px #fff4e1;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #ecd8b6;
+    color: black;
+    scale: 1.03;
+}
+
+
+.formulario input.form-control {
+    height: 3rem;
+}
+
+.form-control:focus {
+    border-color: #fff4e1 !important;
+    box-shadow: 0 0 2px 3px #fff4e1 !important;
+}
+
+.form-control:hover {
+    border-color: #fff4e1;
+}
+
+@media screen and (min-width: 768px) {
+    .tela-contato {
+        margin: 30px 300px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .capa {
+        display: none;
+    }
+
+    .tela-contato {
+        margin: 30px 30px !important;
+    }
+}
