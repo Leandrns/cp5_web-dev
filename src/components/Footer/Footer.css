@@ -27,6 +27,7 @@
     margin-top: auto; 
     text-align: center;
     background-color: #E16D02;
+    height: 35px;
   }
 
   div.social-media i:hover{
@@ -42,4 +43,33 @@
   div.footer-links{
     padding: 10px;
     margin: 10px;
+  }
+
+  div a{
+    color: white;
+  }
+
+  div a:hover {
+    color: #E16D02;
+  }
+
+
+  @media (max-width: 768px) {
+    .footer-columns {
+      flex-direction: column;
+    }
+    .footer-columns > * {
+      flex-basis: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .footer-columns > * {
+      margin-bottom: 10px;
+    }
+    .footer {
+      padding: 5px;
+    }
   }

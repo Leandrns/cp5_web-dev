@@ -75,3 +75,26 @@
         margin: 30px 30px !important;
     }
 }
+
+
+@media (max-width: 768px) {
+    .formulario {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .formulario {
+      padding: 10px;
+    }
+    .formulario input.form-control {
+      height: 2rem;
+    }
+    .formulario button {
+      padding: 5px;
+      font-size: 0.8rem;
+    }
+  }

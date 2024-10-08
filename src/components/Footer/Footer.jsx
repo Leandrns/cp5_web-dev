@@ -17,7 +17,9 @@ export function Footer() {
           <i className="fa-brands fa-facebook" />
         </div>
         <div className="termo-uso">
+            <h4>Politicas</h4>
           <h6><a href="#">Termos de uso</a></h6>
+          <h6><a href="#">Lei do Consumidor</a></h6>
         </div>
       </div>
       <div className="footer">
