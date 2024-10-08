@@ -76,10 +76,6 @@ const HeaderContainer = styled.header`
     }
 `
 
-
-
-
-
 export function Header() {
     return (
         <HeaderContainer>
