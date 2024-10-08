@@ -1,10 +1,84 @@
-import { HeaderOptions } from "../HeaderOptions/HeaderOptions";
+import styled from 'styled-components'
 import logo from '../../images/GOURMETON.png'
-import './Header.css'
+
+const HeaderContainer = styled.header`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    box-shadow: 0 0 8px black;
+
+    nav {
+        width: 100%;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        background-color: #e16e02;
+    }
+
+    #logo {
+        height: 80px;
+        margin-right: 20px;
+        margin-left: 15px;
+    }
+
+    .nav-link {
+        color: #fff4e1;
+    }
+
+    .nav-link:hover {
+        color: #ffa946;
+    }
+
+    form {
+        margin-right: 20px;
+    }
+
+    form input {
+        width: 150px;
+    }
+
+    form button {
+        width: auto;
+        color: #fff4e1;
+        border: none;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+
+    form button:hover {
+        background-color: #fff4e1ab;
+        color: #e16e02;
+    }
+
+    .container-fluid {
+        padding: 0;
+    }
+
+    .navbar-toggler {
+        color: #fff4e1;
+        border: none;
+        margin-right: 15px;
+        font-size: 26px;
+    }
+
+    @media screen and (max-width: 992px) {
+        .navbar-collapse {
+            background-color: #e16e02d7;
+            backdrop-filter: blur(10px);
+            padding: 20px 30px;
+            text-align: start;
+        }
+    }
+`
 
 export function Header() {
     return (
-        <div className="header">
+        <HeaderContainer>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <img src={logo} alt="" id="logo"/>
@@ -33,8 +107,6 @@ export function Header() {
                     </div>
                 </div>
             </nav>
-            {/* <img src={logo} alt="logo" id="logo" />
-            <HeaderOptions /> */}
-        </div>
+        </HeaderContainer>
     )
 }
