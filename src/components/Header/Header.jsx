@@ -60,7 +60,7 @@ const HeaderContainer = styled.header`
     }
 
     .navbar-toggler {
-        color: #fff4e1 !important;
+        color: #fff4e1;
         border: none;
         margin-right: 15px;
         font-size: 26px;
