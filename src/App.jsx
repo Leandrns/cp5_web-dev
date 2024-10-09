@@ -1,4 +1,3 @@
-import './App.css';
 import { Apresentacao } from './components/Apresentacao/Apresentacao';
 import { Depoimentos } from './components/Depoimentos/Depoimentos';
 import { Footer } from './components/Footer/Footer';
@@ -7,10 +6,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import FormularioContato from './components/Form/Form';
 import { Header } from './components/Header/Header';
 import { HeroSection } from './components/HeroSection/HeroSection';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+`
 
 function App() {
   return (
     <div className="App">
+      <GlobalStyle />
       <Header />
       <div id='hero'></div>
       <HeroSection />
