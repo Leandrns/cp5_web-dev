@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Header } from "../Header/Header";
 import { MobileApp } from "../MobileApp/MobileApp";
 
 const HeroContent = styled.div`
@@ -44,16 +43,13 @@ const HeroTexts = styled.div`
 
 export function HeroSection() {
     return (
-        <div className="hero-section">
-            <Header />
-            <HeroContent>
-                <HeroTexts>
-                    <h1>O melhor do mundo gastronômico em um só app</h1>
-                    <h3>Descubra diversos tipos de culinária, peça e receba em sua casa!</h3>
-                    <button>Baixe agora</button>
-                </HeroTexts>
-                <MobileApp />
-            </HeroContent>
-        </div>
+        <HeroContent>
+            <HeroTexts>
+                <h1>O melhor do mundo gastronômico em um só app</h1>
+                <h3>Descubra diversos tipos de culinária, peça e receba em sua casa!</h3>
+                <button>Baixe agora</button>
+            </HeroTexts>
+            <MobileApp />
+        </HeroContent>
     )
 }

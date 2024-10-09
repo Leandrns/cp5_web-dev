@@ -21,7 +21,7 @@ const FormularioContato = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); 
+    console.log(formData);
     setFormData({
       nome: '',
       email: '',
@@ -31,7 +31,7 @@ const FormularioContato = () => {
   };
 
   return (
-    <div className="formulario-container"> 
+    <div className="formulario-container">
       <div className="tela-contato">
         <div className="capa">
         <div className='titulo_formulario'>
