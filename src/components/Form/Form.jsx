@@ -32,7 +32,7 @@ const FormularioContato = () => {
   };
 
   return (
-    <div className="formulario-container"> {/* Adicionei uma div com a classe formulario-container */}
+    <div className="formulario-container"> 
       <div className="tela-contato">
         <div className="capa">
           <h2 className='titulo'><i class="bi bi-telephone-fill"></i>Entre em contato conosco</h2>
