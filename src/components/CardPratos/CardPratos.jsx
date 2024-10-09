@@ -42,7 +42,7 @@ const Botao = styled.button`
 
   &:hover {
     background-color: #FD8F0E;
-    border: solid 2px rgb(151, 104, 17);
+    border: solid 3px rgb(151, 104, 17);
   }
 
   @media (max-width: 768px) {
@@ -51,7 +51,6 @@ const Botao = styled.button`
 `;
 
 const CardPratoContainer = styled.div`
-  background-color:#E16D02;
   padding: 0px;
   margin: 20px 30px;
   max-width: 250px;
@@ -88,7 +87,7 @@ function CardPratos() {
     return ['seafood', 'vegetarian', 'vegan'].includes(comida.strCategory.toLowerCase());
   } else if (category === 'beef') {
     return ['beef', 'lamb', 'pork'].includes(comida.strCategory.toLowerCase());
-  } else if (category === 'dessert') {
+  } else if (category === 'side') {
     return ['side', 'dessert', 'starter'].includes(comida.strCategory.toLowerCase());
   }
   return true; 
@@ -98,9 +97,9 @@ function CardPratos() {
     <EscolhaPratos>
       <h3><i class="fa-solid fa-utensils"></i>Experimente Pratos Variados!</h3>
       <BotoesContainer>
-        <Botao onClick={() => setCategory('seafood')}>Pratos Veganos</Botao>
+        <Botao onClick={() => setCategory('seafood')}>Pratos Leves</Botao>
         <Botao onClick={() => setCategory('beef')}>Pratos de Carne</Botao>
-        <Botao onClick={() => setCategory('dessert')}>Acompanhamentos</Botao>
+        <Botao onClick={() => setCategory('side')}>Acompanhamentos</Botao>
       </BotoesContainer>
 
       <RowStyled>
