@@ -1,17 +1,19 @@
 import { ApresentacaoCard } from "../ApresentacaoCard/ApresentacaoCard.jsx";
+import estrela from "../../images/tela_estrela.png";
+import estrelamb from "../../images/tela_estrela_mobile.png";
 import styled from 'styled-components';
 
 const Funcionalidades = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background: url(../../images/tela_estrela.png);
+  background-image: url(${estrela});
   min-height: 750px;
   padding-bottom: 35px;
 
   @media screen and (max-width: 720px) {
     flex-direction: column;
-    background: url(../../images/tela_estrela_mobile.png);
+    background-image: url(${estrelamb});
   }
 `;
 

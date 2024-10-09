@@ -22,6 +22,7 @@ const Cartao = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   width: 290px;
   height: 290px;
   border: solid #E16D02;
