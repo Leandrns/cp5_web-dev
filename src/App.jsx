@@ -12,10 +12,15 @@ function App() {
   return (
     <div className="App">
       <Header />
+      <div id='hero'></div>
       <HeroSection />
+      <div id='apresentacao'></div>
       <Apresentacao />
+      <div id='funcionalidades'></div>
       <Funcionalidades />
+      <div id='depoimentos'></div>
       <Depoimentos />
+      <div id='contato'></div>
       <FormularioContato />
       <Footer />
     </div>
