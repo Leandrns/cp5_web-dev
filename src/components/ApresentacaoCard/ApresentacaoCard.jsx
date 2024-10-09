@@ -16,6 +16,7 @@ const Description = styled.p`
   font-size: 18px;
   padding: 0 20px;
   font-family: "Fredoka";
+  color: #fff4e1;
 `;
 
 const Cartao = styled.div`

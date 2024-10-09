@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
 import styled from 'styled-components'
-import FormImage from '../../images/capa-form.png';
+import FormImage from '../../images/logo.png';
 
 const FormularioContainer = styled.div`
   background-color: #fd8f0e;
@@ -11,6 +10,7 @@ const FormularioContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Fredoka";
 `
 
 const TelaContato = styled.div`
@@ -19,14 +19,14 @@ const TelaContato = styled.div`
   border-radius: 15px;
   justify-content: space-around;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 836px) {
     flex-direction: column;
     margin: 30px 30px;
   }
 `
 
 const Formulario = styled.form`
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,17 +48,18 @@ const TituloFormulario = styled.div`
   display: flex;
   align-items: center;
   font-size: 30px;
-  gap: 20px;
-  padding-left: 20px;
+  gap: 10px;
+  padding: 15px;
 `
 
 const Capa = styled.div`
   background-color: #fff4e1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 
-  @media (max-width: 769px) {
+  @media (max-width: 836px) {
     #capa {
       display: none;
     }
@@ -66,8 +67,8 @@ const Capa = styled.div`
 `
 
 const CapaImage = styled.img`
-  width: 100%;
-  height: 325px;
+  height: 250px;
+  width: 250px;
   border-radius: 0 12px 12px 0;
 `
 
@@ -89,47 +90,34 @@ const Botao = styled.button`
 
 const Input = styled.input`
   height: 3rem;
+  border-radius: 8px;
+  border: solid 2px #979797;
+  transition: all .3s ease;
+  padding: 8px;
 
   &:focus {
-    border-color: #fff4e1;
+    border-color: #ffc96c;
     box-shadow: 0 0 2px 3px #fff4e1;
   }
 
   &:hover {
-    border-color: #fff4e1;
+    border-color: #e16e02;
   }
 `
 
 const Textarea = styled.textarea`
   height: auto;
+  border-radius: 8px;
+  border: solid 2px #979797;
+  transition: all .3s ease;
+  padding: 8px;
+
+  &:hover {
+    border-color: #e16e02;
+  }
 `
 
 const FormularioContato = () => {
-  const [formData, setFormData] = useState({
-    nome: '',
-    email: '',
-    assunto: '',
-    mensagem: ''
-  });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(formData);
-    setFormData({
-      nome: '',
-      email: '',
-      assunto: '',
-      mensagem: ''
-    });
-  };
 
   return (
     <FormularioContainer>
@@ -142,15 +130,12 @@ const FormularioContato = () => {
           <CapaImage src={FormImage} alt="" id='capa'/>
         </Capa>
         
-        <Formulario onSubmit={handleSubmit}>
+        <Formulario>
           <label htmlFor="nome">Nome:</label>
           <Input
             type="text"
             id="nome"
             name="nome"
-            value={formData.nome}
-            onChange={handleChange}
-            required
           />
 
           <label htmlFor="email">E-mail:</label>
@@ -158,9 +143,6 @@ const FormularioContato = () => {
             type="email"
             id="email"
             name="email"
-            value={formData.email}
-            onChange={handleChange}
-            required
           />
 
           <label htmlFor="assunto">Assunto:</label>
@@ -168,19 +150,13 @@ const FormularioContato = () => {
             type="text"
             id="assunto"
             name="assunto"
-            value={formData.assunto}
-            onChange={handleChange}
-            required
           />
 
           <label htmlFor="mensagem">Mensagem:</label>
           <Textarea
             id="mensagem"
             name="mensagem"
-            value={formData.mensagem}
-            onChange={handleChange}
             rows="4"
-            required
           ></Textarea>
 
           <Botao type="submit">Enviar</Botao>

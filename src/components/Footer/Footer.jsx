@@ -1,36 +1,31 @@
 import styled from 'styled-components';
+import logo from '../../images/GOURMETON.png'
 
 const MainFooter = styled.div`
   background-color: #3f3f3f;
   display: flex;
   flex-direction: column;
-  text-align: center;
   color: white;
+  font-family: "Fredoka";
 `;
 
 const FooterColumns = styled.div`
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  height: 40vh;
 
-  > * {
-    flex-basis: 25%;
+  img {
+    width: 35%;
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
-
-    > * {
-      flex-basis: 100%;
-      margin-bottom: 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    > * {
-      margin-bottom: 10px;
+    height: auto;
+    img {
+      width: 70%;
     }
   }
 `;
@@ -38,6 +33,9 @@ const FooterColumns = styled.div`
 const FooterLinks = styled.div`
   padding: 10px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   h4 {
     margin-bottom: 10px;
@@ -47,16 +45,23 @@ const FooterLinks = styled.div`
     margin: 0; /* Remove margens para p */
     color: white;
     text-decoration: none;
+    transition: 0.5s;
 
     &:hover {
       color: #e16d02;
     }
   }
+
+  @media (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const SocialMedia = styled.div`
-  flex: 1;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h4 {
     margin-bottom: 10px;
@@ -74,8 +79,10 @@ const SocialMedia = styled.div`
 `;
 
 const TermoUso = styled.div`
-  flex: 1;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 
   h4 {
     margin-bottom: 10px;
@@ -87,11 +94,16 @@ const TermoUso = styled.div`
     a {
       color: white;
       text-decoration: none;
+      transition: 0.5s;
 
       &:hover {
         color: #e16d02;
       }
     }
+  }
+
+  @media (max-width: 768px) {
+    align-items: center;
   }
 `;
 
@@ -99,7 +111,7 @@ const FooterText = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e16d02;
+  background-color: #252525;
   height: 35px;
   margin-top: 20px; /* Espaçamento acima do texto do footer */
 
@@ -112,6 +124,7 @@ export function Footer() {
   return (
     <MainFooter>
       <FooterColumns>
+        <img src={logo} alt="" />
         <FooterLinks>
           <h4>Contato</h4>
           <p>Telefone</p>
@@ -121,8 +134,11 @@ export function Footer() {
         </FooterLinks>
         <SocialMedia>
           <h4>Redes Sociais</h4>
-          <i className="fa-brands fa-instagram" />
-          <i className="fa-brands fa-facebook" />
+          <div className="icons">
+            <i className="fa-brands fa-instagram" />
+            <i className="fa-brands fa-facebook" />
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
         </SocialMedia>
         <TermoUso>
           <h4>Políticas</h4>
