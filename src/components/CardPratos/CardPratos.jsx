@@ -7,12 +7,11 @@ import styled from 'styled-components';
 
 // Styled Components
 const EscolhaPratos = styled.div`
-  margin-bottom: 30px;
 
   h3 {
     text-align: center;
     color: white;
-    padding-left: 20px;
+    padding: 20px 30px;
   }
 
   i {
@@ -26,14 +25,15 @@ const BotoesContainer = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 20px;
 `;
 
 const Botao = styled.button`
   color: white;
   background-color: #E16D02;
-  border-radius: 5px;
-  width: 100%;
+  border-radius: 15px;
+  border: solid #FFA033FF 3px;
+  width: 80%;
   max-width: 250px;
   padding: 10px;
   text-align: center;
@@ -51,7 +51,7 @@ const Botao = styled.button`
 `;
 
 const CardPratoContainer = styled.div`
-  background-color: #E16D02;
+  background-color:#E16D02;
   padding: 0px;
   margin: 20px 30px;
   max-width: 250px;
