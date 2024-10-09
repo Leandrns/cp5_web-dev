@@ -1,15 +1,16 @@
 import './App.css';
 import { Apresentacao } from './components/Apresentacao/Apresentacao';
 import { Depoimentos } from './components/Depoimentos/Depoimentos';
-import { HeroSection } from './components/HeroSection/HeroSection';
 import Funcionalidades from './components/Funcionalidades/Funcionalidades';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Header } from './components/Header/Header';
+import { HeroSection } from './components/HeroSection/HeroSection';
 
 function App() {
   return (
     <div className="App">
+      <Header />
       <HeroSection />
-      <Apresentacao/>
+      <Apresentacao />
       <Funcionalidades />
       <Depoimentos />
     </div>
