@@ -23,7 +23,7 @@ export function Footer() {
         </div>
       </div>
       <div className="footer">
-        <h6>&Copyright CLIRV</h6>
+        <h6>© Copyright CLIRV | GOURMETON</h6>
       </div>
     </div>
   );

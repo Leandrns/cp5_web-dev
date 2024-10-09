@@ -1,16 +1,11 @@
-
-
 .tela-contato {
     display: flex;
-    border: solid 3px #fff4e1;
+    border: solid 4px #fff4e1;
     border-radius: 15px;
     justify-content: space-around;
     
 }
-.titulo{
-    display: flex;
-    margin: 20px;
-}
+
 .formulario {
     padding: 40px !important;
     display: flex;
@@ -21,24 +16,36 @@
     background-color: #fff4e1;
 }
 
+.titulo_formulario{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    gap: 20px;
+    padding-left: 20px;
+}
+
 div.capa{
     background-color: #fff4e1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .formulario label, .formulario button {
     font-weight: 600;
+    padding-top: 6px;
 }
 
 .capa img {
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 325px;
     border-radius: 0 12px 12px 0;
     align-content: center;
 }
 
 .formulario button {
     background-color: #fff4e1;
-    border: solid 2px #fff4e1;
+    border: solid 2px #e16e02;
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
@@ -70,15 +77,25 @@ div.capa{
     .tela-contato {
         margin: 30px 300px !important;
     }
+    
 }
 
 @media screen and (max-width: 767px) {
-    .capa {
+    #capa {
         display: none;
     }
 
     .tela-contato {
         margin: 30px 30px !important;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo_formulario{
+        padding: 20px;
+    }
+    .formulario{
+        padding: 0px 40px 40px 40px !important;
     }
 }
 
@@ -87,7 +104,7 @@ div.capa{
     .formulario {
       width: 100%;
       height: auto;
-      padding: 20px;
+      
     }
   }
   
@@ -108,11 +125,9 @@ div.capa{
   .formulario-container {
     background-color: #FD8F0E; 
     padding: 20px; 
-    border: 1px solid #FD8F0E; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #FD8F0E;  
     width: 100%; 
-    height: 100vh; 
+    height: 100%; 
     display: flex; 
     justify-content: center; 
     align-items: center; 

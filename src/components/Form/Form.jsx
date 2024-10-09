@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import './Form.css'
 import Form from '../../images/capa-form.png'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 const FormularioContato = () => {
   const [formData, setFormData] = useState({
@@ -35,9 +34,13 @@ const FormularioContato = () => {
     <div className="formulario-container"> 
       <div className="tela-contato">
         <div className="capa">
-          <h2 className='titulo'><i class="bi bi-telephone-fill"></i>Entre em contato conosco</h2>
+        <div className='titulo_formulario'>
+          <i class="fa-solid fa-phone"></i>
+          <h2 className='titulo'>Entre em contato conosco</h2>
+        </div>
           <img src={Form} alt="" id="capa" />
         </div>
+        
         <form className="formulario" onSubmit={handleSubmit}>
           <label htmlFor="nome">Nome:</label>
           <input

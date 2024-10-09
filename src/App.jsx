@@ -5,7 +5,6 @@ import { HeroSection } from './components/HeroSection/HeroSection';
 import Funcionalidades from './components/Funcionalidades/Funcionalidades';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import FormularioContato from './components/Form/Form';
-import React from 'react';
 import { Footer } from './components/Footer/Footer';
 
 function App() {
