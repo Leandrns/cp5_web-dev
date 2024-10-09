@@ -3,6 +3,73 @@ import React, { useState, useEffect } from 'react';
 import { Card, Row, Col } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Prato from '../Prato/Prato';
+import styled from 'styled-components';
+
+
+// Styled Components
+const EscolhaPratos = styled.div`
+  margin-bottom: 30px;
+
+  h3 {
+    text-align: center;
+    color: white;
+    padding-left: 20px;
+  }
+
+  i {
+    padding: 0 10px;
+  }
+`;
+
+const BotoesContainer = styled.div`
+  padding: 10px 20px;
+  margin: 10px auto 30px auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+`;
+
+const Botao = styled.button`
+  color: white;
+  background-color: salmon;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px;
+  text-align: center;
+  transition: all ease 0.5s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: orange;
+    border: solid 2px rgb(151, 104, 17);
+  }
+
+  @media (max-width: 768px) {
+    min-width: 70vw;
+  }
+`;
+
+const CardPratoContainer = styled.div`
+  background-color: salmon;
+  padding: 0px;
+  margin: 20px 30px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+`;
+
+const RowStyled = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  --bs-gutter-x: 0.0rem;
+`;
+
 
 function CardPratos() {
   const [comidas, setComidas] = useState([]);
@@ -18,39 +85,33 @@ function CardPratos() {
   }, []);
 
   const filteredComidas = comidas.filter(comida => {
-    if (category === 'vegan') {
-      return comida.strCategory.toLowerCase().includes('seafood') ||
-        comida.strCategory.toLowerCase().includes('vegetarian') ||
-        comida.strCategory.toLowerCase().includes('vegan');
-    } else if (category === 'beef') {
-      return comida.strCategory.toLowerCase().includes('beef') ||
-        comida.strCategory.toLowerCase().includes('lamb') ||
-        comida.strCategory.toLowerCase().includes('pork');
-    } else if (category === 'dessert') {
-      return comida.strCategory.toLowerCase().includes('side') ||
-        comida.strCategory.toLowerCase().includes('dessert') ||
-        comida.strCategory.toLowerCase().includes('starter');
-    }
-    return true; 
-  });
+  if (category === 'seafood') {
+    return ['seafood', 'vegetarian', 'vegan'].includes(comida.strCategory.toLowerCase());
+  } else if (category === 'beef') {
+    return ['beef', 'lamb', 'pork'].includes(comida.strCategory.toLowerCase());
+  } else if (category === 'dessert') {
+    return ['side', 'dessert', 'starter'].includes(comida.strCategory.toLowerCase());
+  }
+  return true; 
+});
 
   return (
-    <div className='escolha_pratos'>
-      <h3>Experimente pratos variados</h3>
-      <div className="botoes">
-        <button className='botao' onClick={() => setCategory('vegan')}>Pratos Veganos</button>
-        <button className='botao' onClick={() => setCategory('beef')}>Pratos de Carne</button>
-        <button className='botao' onClick={() => setCategory('dessert')}>Acompanhamento</button>
-      </div>
+    <EscolhaPratos>
+      <h3><i class="fa-solid fa-utensils"></i>Experimente Pratos Variados!</h3>
+      <BotoesContainer>
+        <Botao onClick={() => setCategory('seafood')}>Pratos Veganos</Botao>
+        <Botao onClick={() => setCategory('beef')}>Pratos de Carne</Botao>
+        <Botao onClick={() => setCategory('dessert')}>Acompanhamentos</Botao>
+      </BotoesContainer>
 
-      <Row className="justify-content-center">
+      <RowStyled>
         {filteredComidas.slice(0, 3).map((comida) => (
-          <Col xs={12} sm={6} md={4} className="d-flex justify-content-center" key={comida.idCategory}>
+          <CardPratoContainer key={comida.idCategory}>
             <Prato prato={comida} />
-          </Col>
+          </CardPratoContainer>
         ))}
-      </Row>
-    </div>
+      </RowStyled>
+    </EscolhaPratos>
   );
 }
 

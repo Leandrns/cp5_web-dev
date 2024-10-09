@@ -14,7 +14,7 @@
   
   .botao {
     color: white;
-    background-color: rgb(238, 176, 61);
+    background-color: #fabc52;
     border: 2px solid salmon;
     border-radius: 5px;
     padding: 10px ;
@@ -33,7 +33,7 @@
   
   .card {
     background-color: #e9ecef;
-    border: 4px solid salmon;
+    border: 5px solid salmon;
     padding: 10px;
    
     width: 100%;
@@ -43,7 +43,7 @@
   }
   
   .card:hover{
-    border: 2px solid salmon;
+    background-color: rgb(255, 227, 223);
     box-shadow: 0 0 10px orangered;
   }
   
@@ -54,7 +54,14 @@
   .card button{
     background-color: orange;
     color: white;
-    border: solid 2px orangered;
+    border: solid 3px orangered;
     border-radius: 10px;
+    padding:  5px 10px 5px 10px;
+    transition: ease 0.6s;
+  }
+  
+  .card button:hover{
+    background-color:#fabc52;
+    color: white;
   }
   

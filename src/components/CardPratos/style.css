@@ -1,6 +1,11 @@
-.escolha_pratos h3 {
+/* .escolha_pratos h3 {
     text-align: center;
     color: white;
+    padding-left: 20px;
+}
+
+.escolha_pratos i{
+    padding: 0 10px;
 }
 
 .escolha_pratos {
@@ -60,4 +65,4 @@
     justify-content: center;
     flex-wrap: wrap;
     --bs-gutter-x: 0.0rem;
-}
+} */
