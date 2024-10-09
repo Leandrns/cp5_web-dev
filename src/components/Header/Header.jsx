@@ -10,6 +10,7 @@ const HeaderContainer = styled.header`
     top: 0;
     z-index: 2;
     box-shadow: 0 0 8px black;
+    font-family: "Fredoka";
 
     nav {
         width: 100%;

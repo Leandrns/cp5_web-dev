@@ -7,6 +7,7 @@ const HeroContent = styled.div`
     align-items: center;
     padding: 20px;
     background-color: #FD8F0E;
+    font-family: "Fredoka";
 
     @media screen and (max-width: 680px) {
         flex-direction: column;
