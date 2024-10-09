@@ -1,11 +1,22 @@
+import styled from "styled-components";
 import img_cr7 from "../../images/cr7.png";
 import img_messi from "../../images/messi.png";
 import img_neymar from "../../images/neymar.png";
 import { Depoimento } from "../Depoimento/Depoimento.jsx";
 
+const DepoimentosContainer=styled.div`
+    .carousel-control-prev-icon {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    }
+
+    .carousel-control-next-icon {
+        filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+    }
+`
+
 export function Depoimentos() {
     return (
-        <div className="depoimentos">
+        <DepoimentosContainer>
             <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
@@ -27,8 +38,7 @@ export function Depoimentos() {
                     <span class="visually-hidden">Próxima</span>
                 </button>
             </div>
-
-        </div>
+        </DepoimentosContainer>
 
 
     )
