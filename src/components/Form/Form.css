@@ -18,7 +18,11 @@
     justify-content: center;
     width: 500px;
     height: 450px;
-    
+    background-color: #fff4e1;
+}
+
+div.capa{
+    background-color: #fff4e1;
 }
 
 .formulario label, .formulario button {
@@ -104,7 +108,7 @@
   .formulario-container {
     background-color: #FD8F0E; 
     padding: 20px; 
-    border: 1px solid #ddd; 
+    border: 1px solid #FD8F0E; 
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
     width: 100%; 
