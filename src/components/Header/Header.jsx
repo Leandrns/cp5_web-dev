@@ -74,6 +74,12 @@ const HeaderContainer = styled.header`
             text-align: start;
         }
     }
+    @media screen and (max-width: 370px){
+        #logo{
+            height: 70px;
+        }
+    }
+
 `
 
 export function Header() {
@@ -81,7 +87,7 @@ export function Header() {
         <HeaderContainer>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
-                    <a href="#hero">
+                    <a href="#hero" className='link'>
                     <img src={logo} alt="" id="logo"/>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
