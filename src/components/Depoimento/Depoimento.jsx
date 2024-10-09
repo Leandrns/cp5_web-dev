@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import FundoDesktop from "../../images/tela_circulo.png"
+import FundoMobile from "../../images/tela_circulo_mobile.png"
 
 const DepoimentoContainer=styled.div`
     background-image: url(${FundoDesktop});
@@ -15,7 +16,7 @@ const DepoimentoContainer=styled.div`
 
     @media screen and (max-width: 900px) {
         width: 100%;
-        background: url("../../images/tela_circulo_mobile.png");
+        background-image: url(${FundoMobile});
     .img{
         width: 300px;
     }
